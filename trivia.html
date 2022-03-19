@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="trivia.css">
+    <!-- <link rel="stylesheet" href="trivia.js"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div id="trivia">
+            <div id="hud">
+                <div class="progress">
+                    <p id="progressText" class="hud-prefix">
+                        Progress
+                    </p>
+                    <div id="progressBar">
+                        <div id="progressBarFull"></div>
+                    </div>
+                    <div id="progressBarHandle"></div>
+                    <div id="progressBarHilt"></div>
+                    <div id="progressBarHandle"></div>
+                </div>
+                <div class="images">
+                    <img id="image" src="LukeSkywalker.png" alt="">
+                </div>
+                <div class="score">
+                    <p class="hud-prefix">
+                        Score
+                    </p>
+                    <h1 id="score" class="hud-main-text">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <div class="question">Who is this?</div>
+            <div class="choice-container">
+                <div class="choice-prefix">A</div>
+                <div class="choice-text" data-number="1">Choice</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">B</div>
+                <div class="choice-text" data-number="2">Choice</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">C</div>
+                <div class="choice-text" data-number="3">Choice</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">D</div>
+                <div class="choice-text" data-number="4">Choice</div>
+            </div>
+        </div>      
+    </div>    
+    <script src="trivia.js"></script>
+</body>
+</html>

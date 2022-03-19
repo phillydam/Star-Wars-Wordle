@@ -1,0 +1,124 @@
+body{
+    color: white;
+}
+
+.choice-container{
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 4px;
+    background-color: yellow;
+    color: black;
+    min-width: 50rem;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    background-color: goldenrod;
+    transform: scale(1.05);
+    transition-duration: 120ms;
+}
+
+.choice-prefix {
+    padding: 1rem;
+    text-align: center;
+}
+
+.choice-text{
+    padding: 1rem;
+}
+
+.correct{
+    background: linear-gradient(lightblue);
+}
+
+.wrong{
+    background: linear-gradient(red);
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 4rem; */
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 4rem;
+    padding-bottom: 6rem;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.hud-prefix{
+    text-align: center;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+
+.question{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#progressBar{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    transform: translateX(.25rem) rotate(180deg);
+    width: 1.5rem;
+    height: 20rem;
+    color: green;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+#progressBarHandle{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    width: 2rem;
+    height: .5rem;
+    background-color: brown;
+    /* margin-top: 2rem; */
+    overflow: hidden;
+}
+
+#progressBarHilt{
+    display: flex;
+    justify-content: left;
+    position: relative;
+    width: 2rem;
+    height: 5rem;
+    background-color: silver;
+    /* margin-top: 2rem; */
+    overflow: hidden;
+}
+
+#progressBarFull{
+    height: 0%;
+    background: green;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .choice-container{
+        min-width: 40rem
+    }
+}

@@ -27,7 +27,6 @@ p{
 
 .container{
     display: flex;
-    flex-direction: column;
     width: 100vh;
     height: 100vh;
     justify-content: center;
@@ -59,20 +58,6 @@ p{
     justify-content: center;
     width: 20rem;
     margin: 1rem;
-    padding: 1rem;
-    background: yellow;
-    color: black;
-}
-
-#startButton{
-    font-size: 3rem;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    width: 20rem;
-    margin: 6rem;
     padding: 1rem;
     background: yellow;
     color: black;
@@ -127,7 +112,7 @@ p{
 
 @keyframes crawl {
     0% {
-      top: 1500px;
+      top: 100px;
       transform: rotateX(20deg)  translateZ(0);
     }
     100% { 
