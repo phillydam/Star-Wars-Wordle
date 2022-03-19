@@ -112,7 +112,7 @@ nextQuestion = () => {
 
     const questionsIndex = Math.floor(Math.random() * availableQuestion.length)
     currentQuestion = availableQuestion[questionsIndex]
-    questions.innerText = currentQuestion.question
+    questions.innerText = currentQuestion.questgion
 
     choices.forEach(choice => {
         const number = choice.dataset["number"]
