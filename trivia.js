@@ -97,7 +97,7 @@ nextQuestion = () => {
 
     if(score >= 400 || availableQuestion.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('recentScore', score)
-        return window.location.assign("/youwin.html")
+        return window.location.assign("youwin.html")
 
         if(score < 400 || availableQuestion.length === 0 || questionCounter >= MAX_QUESTIONS) {
             localStorage.setItem('recentScore', score)
