@@ -14,7 +14,6 @@ body{
 
 .choice-container:hover{
     cursor: pointer;
-    background-color: goldenrod;
     transform: scale(1.05);
     transition-duration: 120ms;
 }

@@ -79,14 +79,14 @@ p{
     color: black;
 }
 
-.link:hover{
+.button:hover{
     cursor: pointer;
-    background-color: goldenrod;
+    background-color: yellow;
     transform: scale(1.2);
     transition-duration: 120ms;
 }
 
-.link[disabled]:hover{
+.button[disabled]:hover{
     cursor: not-allowed;
     box-shadow: none;
     transform: none;

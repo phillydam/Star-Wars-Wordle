@@ -78,7 +78,7 @@ let questions = [
     },
 ]
 
-const SCORE_POINTS = 100
+const SCORE_POINTS = 25
 const MAX_QUESTIONS = 4
 
 startGame = () => {
@@ -95,11 +95,11 @@ nextQuestion = () => {
     //     return window.location.assign("/finish.html")
     // }
 
-    if(score >= 400 || availableQuestion.length === 0 || questionCounter >= MAX_QUESTIONS) {
+    if(score >= 100 || availableQuestion.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('recentScore', score)
         return window.location.assign("youwin.html")
 
-        if(score < 400 || availableQuestion.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        if(score < 100 || availableQuestion.length === 0 || questionCounter >= MAX_QUESTIONS) {
             localStorage.setItem('recentScore', score)
             return window.location.assign("/youlose.html")
         }
